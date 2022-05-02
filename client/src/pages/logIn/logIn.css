@@ -1,0 +1,41 @@
+.logInRoot{
+    height: 100vh;
+}
+
+.logInBox{
+    box-shadow: rgb(0 0 0 / 12%) 0px 0px 43px 7px;
+    max-height: 85vh;
+    width: 39vw;
+}
+
+.logInForm{
+    overflow-y: auto;
+}
+
+.logInFormGroup{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.logInFormGroup label{
+
+}
+
+.logInError{
+    margin-bottom: 15px;
+    padding: 4px 12px;
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+}
+
+
+
+.submitButton{
+    width: 95%;
+    border-radius: 9999px !important;
+}
+
+.logInFooter div{
+    display: flex;
+    justify-content: center;
+}

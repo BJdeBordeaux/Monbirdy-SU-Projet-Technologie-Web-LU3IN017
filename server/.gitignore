@@ -1,0 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# mongo log
+/mongo/diagnostic.data
+/mongo/journal
+/mongo/mongod.lock
+
+
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# personalize
+.gogogo
+nohup.out
+mongo/mongo/sizeStorer*
+mongo/mongo/journal/*
+mongo/mongo/WiredTiger*
+mongo/mongod.log*
+mongo/mongo/diagnostic*
+mongo/mongo/diagnostic.data/*
+mongo/mongo/WiredTiger.*
+mongo/mongo/sizeStorer.*
+mongo/mongo/diagnostic.data/metrics.interim

@@ -1,0 +1,36 @@
+.topNavbarBrand {
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.nav-item .nav-link {
+  align-items: baseline;
+  align-content: center;
+  cursor: pointer;
+}
+
+.navbarDropdownMenu {
+  top: 50px;
+  right: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  display: flex;
+}
+
+.dropdown-item .span {
+  margin-right: auto;
+}
+
+.dropdown-item svg {
+  margin-left: auto;
+}
+
+
+
+.navbarImg {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}

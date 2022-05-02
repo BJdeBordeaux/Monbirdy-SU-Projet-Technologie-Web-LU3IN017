@@ -1,0 +1,9 @@
+.mainScreen{
+    position: relative;
+    top: 56px;
+    display: flex;
+}
+
+.main{
+    flex: 5;
+}

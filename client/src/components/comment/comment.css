@@ -1,0 +1,57 @@
+
+
+.commentFormInput{
+    border: none;
+}
+
+.commentFormImageDiv {
+    padding: 10px 0 10px 0;
+    position: relative;
+}
+
+.commentFormPhoto {
+    width: auto;
+    max-height: 45vh;
+    object-fit: cover;
+    border: 1px solid lightgray;
+}
+
+.commentFormDeleteImg {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+}
+
+
+.commentCard {
+    margin-bottom: 10px;
+}
+
+.commentProfileImg {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    /* margin: 10px 10px 10px 0; */
+    border-radius: 50%;
+}
+
+.commentUsername {
+    text-decoration: none;
+    color: black;
+}
+
+.timeSpan {
+    margin-right: 10px;
+    font-weight: 100;
+    font-size: small;
+    font-family: fantasy;
+    color: grey;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.commentText{
+    /* font-weight: 150; */
+    font-family: 'Times New Roman', Times, serif;
+    word-break: break-all;
+}

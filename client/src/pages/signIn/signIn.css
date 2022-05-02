@@ -1,0 +1,31 @@
+.signInRoot{
+    height: 100vh;
+}
+
+.signInBox{
+    height: auto;
+    width: 39vw;
+    box-shadow: rgb(0 0 0 / 12%) 0px 0px 43px 7px;
+}
+
+.signInForm{
+    overflow-y: auto;
+}
+
+.signInFormGroup{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.signInError{
+    margin-bottom: 15px;
+    padding: 4px 12px;
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    /* color: red; */
+}
+
+.signInFooter div{
+    display: flex;
+    justify-content: center;
+}

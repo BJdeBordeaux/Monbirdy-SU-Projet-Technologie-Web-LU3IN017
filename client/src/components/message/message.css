@@ -1,0 +1,68 @@
+.messageFormButton {
+    /* background-color: #4CAF50;
+    border: 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 36px; */
+}
+
+.messageFormInput{
+    border: none;
+}
+
+.messageFormImageDiv {
+    padding: 10px 0 10px 0;
+    position: relative;
+}
+
+.messageFormPhoto {
+    width: auto;
+    max-height: 45vh;
+    object-fit: cover;
+    border: 1px solid lightgray;
+}
+
+.messageFormDeleteImg {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+}
+
+
+.messageCard {
+    margin-bottom: 10px;
+}
+
+.messageProfileImg {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    margin: 10px 10px 10px 0;
+    border-radius: 50%;
+}
+
+.messageUsername {
+    text-decoration: none;
+    color: black;
+}
+
+.timeSpan {
+    font-weight: 100;
+    font-size: small;
+    font-family: fantasy;
+    color: grey;
+}
+
+.messageImg {
+    width: auto;
+    max-height: 45vh;
+    object-fit: cover;
+    overflow-y: scroll;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}

@@ -1,0 +1,32 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'App', 'x':134, 'y':60, 'width':143, 'height':164, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'NavbarSearch', 'x':608, 'y':243, 'width':143, 'height':109, 'attrs': '', 'meths': 'changeCollapsed()|handleLogOut()|handleShowFriends()|handleSearch(event)'}
+{'type':'umlshape', 'id':'FriendBox', 'x':624, 'y':186, 'width':100, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'FriendList', 'x':809, 'y':199, 'width':110, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'Friend', 'x':1022, 'y':201, 'width':70, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'MessageForm', 'x':605, 'y':54, 'width':143, 'height':94, 'attrs': '', 'meths': 'handleSubmit(event)|handleUpload(event)|handleChange(event)'}
+{'type':'umlshape', 'id':'Message', 'x':844, 'y':401, 'width':80, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'SignIn', 'x':372, 'y':121, 'width':108, 'height':64, 'attrs': '', 'meths': 'handleSignIn()'}
+{'type':'umlshape', 'id':'LogIn', 'x':394, 'y':40, 'width':60, 'height':64, 'attrs': '', 'meths': 'logIn()'}
+{'type':'umlshape', 'id':'Home', 'x':480, 'y':77, 'width':50, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'Profile', 'x':345, 'y':306, 'width':80, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'MessageList', 'x':603, 'y':373, 'width':120, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'Home', 'x':377, 'y':205, 'width':50, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'UserInfo', 'x':567, 'y':484, 'width':227, 'height':109, 'attrs': '', 'meths': 'handleFollowing()|handleChangeCoverPhoto(event)|handleChangeProfilePhoto(event)|handleChangeUserInfo()'}
+{'type':'edge', 'id':'FriendList_to_FriendBox', 'source':'FriendList', 'target':'FriendBox', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Friend_to_FriendList', 'source':'Friend', 'target':'FriendList', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'LogIn_to_App', 'source':'LogIn', 'target':'App', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'SignIn_to_App', 'source':'SignIn', 'target':'App', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Profile_to_App', 'source':'Profile', 'target':'App', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'MessageList_to_Profile', 'source':'MessageList', 'target':'Profile', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Message_to_MessageList', 'source':'Message', 'target':'MessageList', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'NavbarSearch_to_Profile', 'source':'NavbarSearch', 'target':'Profile', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Home_to_App', 'source':'Home', 'target':'App', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'FriendBox_to_Home', 'source':'FriendBox', 'target':'Home', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'MessageForm_to_Home', 'source':'MessageForm', 'target':'Home', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'NavbarSearch_to_Home', 'source':'NavbarSearch', 'target':'Home', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'FriendBox_to_Profile', 'source':'FriendBox', 'target':'Profile', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'MessageList_to_Home', 'source':'MessageList', 'target':'Home', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'UserInfo_to_Home', 'source':'UserInfo', 'target':'Home', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'UserInfo_to_Profile', 'source':'UserInfo', 'target':'Profile', 'uml_edge_type': 'composition'}
