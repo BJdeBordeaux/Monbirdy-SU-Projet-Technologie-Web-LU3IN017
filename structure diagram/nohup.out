@@ -1,0 +1,82 @@
+Sun, 24 Apr 2022 19:51:50 GMT koa deprecated Support for generators will be removed in v3. See the documentation for examples of how to convert old middleware https://github.com/koajs/koa/blob/master/docs/migration.md at internal/process/task_queues.js:93:5
+start update
+Checking for update
+Found version 2.1.9 (url: http://cdn.apifox.cn/download/2.1.9/Apifox-2.1.9.AppImage)
+typeof autoUpdateDuration: number
+/home/bj/.config/apifox/.updaterId
+auto update staging percentage: 2.33441013912233e-10, percentage: 0.9605352778361493, user id: df74581b-ac5d-5798-abc2-261bf5e5a3d4
+not need auto download
+start update
+Checking for update
+Found version 2.1.9 (url: http://cdn.apifox.cn/download/2.1.9/Apifox-2.1.9.AppImage)
+typeof autoUpdateDuration: number
+auto update staging percentage: 2.334467268751965e-10, percentage: 0.9605352778361493, user id: df74581b-ac5d-5798-abc2-261bf5e5a3d4
+not need auto download
+start update
+Checking for update
+Found version 2.1.9 (url: http://cdn.apifox.cn/download/2.1.9/Apifox-2.1.9.AppImage)
+typeof autoUpdateDuration: number
+auto update staging percentage: 2.334507407640858e-10, percentage: 0.9605352778361493, user id: df74581b-ac5d-5798-abc2-261bf5e5a3d4
+not need auto download
+Error: connect ECONNREFUSED 127.0.0.1:8800
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8800
+}
+Error: connect ECONNREFUSED 127.0.0.1:8800
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8800
+}
+Error: connect ECONNREFUSED 127.0.0.1:8800
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8800
+}
+Error: connect ECONNREFUSED 127.0.0.1:8800
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8800
+}
+Error: connect ECONNREFUSED 127.0.0.1:8800
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8800
+}
+Error: connect ECONNREFUSED 127.0.0.1:8800
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8800
+}
+meta-schema not available
+meta-schema not available
+meta-schema not available
+meta-schema not available
+meta-schema not available
+meta-schema not available
+meta-schema not available
+meta-schema not available
+[0424/221533.481964:ERROR:file_io_posix.cc(152)] open /home/bj/.config/google-chrome/Crash Reports/pending/d4183deb-9ec8-4bb5-8dc7-1eaf7295978b.lock: File exists (17)
+Ouverture dans une session de navigateur existante.
+[33557:33557:0100/000000.587120:ERROR:sandbox_linux.cc(377)] InitializeSandbox() called with multiple threads in process gpu-process.
+[0424/221624.033811:ERROR:file_io_posix.cc(152)] open /home/bj/.config/google-chrome/Crash Reports/pending/d4183deb-9ec8-4bb5-8dc7-1eaf7295978b.lock: File exists (17)
+Ouverture dans une session de navigateur existante.
+[33705:33705:0100/000000.865189:ERROR:sandbox_linux.cc(377)] InitializeSandbox() called with multiple threads in process gpu-process.

@@ -1,0 +1,575 @@
+{
+	"info": {
+		"_postman_id": "1a45d117-fcc4-4eaa-98af-46255674a779",
+		"name": "monbirdytest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/auth/logout",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "redirect_uri",
+									"value": "https://imgur.com",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "imgur token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cd28bd82bff9f43e5b794a4cf7f8f40545a707d2",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "a79be7c37affe5b",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://api.imgur.com/oauth2/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://api.imgur.com/oauth2/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\",\n    \"email\": \"test@t.com\",\n    \"password\" : \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/auth/register",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/auth/login",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "find an user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/users?username=test",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update an user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"city\": \"Bordeaux\",\n    \"description\": \"new description\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/users/{{testUserId}}",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"users",
+								"{{testUserId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "follow/unfollow an user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"625d9f427f9cc5c57f719c74\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/users/{{testUserId}}/followings",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"users",
+								"{{testUserId}}",
+								"followings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all followings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/users/{{testUserId}}/followings",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"users",
+								"{{testUserId}}",
+								"followings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete an user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"62619107da423686c00878ec\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/users/62619107da423686c00878ec",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"users",
+								"62619107da423686c00878ec"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "create a post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"Hello world\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/posts/{{testUserId}}",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"posts",
+								"{{testUserId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/posts/626fdb7911635eb8ea1ac9c4",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"posts",
+								"626fdb7911635eb8ea1ac9c4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find a post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/posts/{{testPostId}}",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"posts",
+								"{{testPostId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"new content\",\n    \"userId\": \"{{testUserId}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/posts/{{testPostId}}",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"posts",
+								"{{testPostId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like/dislike a post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"{{testUserId}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/posts/{{testPostId}}/like",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"posts",
+								"{{testPostId}}",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show timeline post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/posts/timeline/{{testUserId}}",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"posts",
+								"timeline",
+								"{{testUserId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user's all posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/posts/profile/test",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"posts",
+								"profile",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "create a comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"A comment\",\n    \"userId\": \"{{testUserId}}\",\n    \"postId\": \"{{testPostId}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/comments",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get a comment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"A comment\",\n    \"userId\": \"{{testUserId}}\",\n    \"postId\": \"{{testPostId}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/comments/{{testCommentId}}",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"comments",
+								"{{testCommentId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"A comment\",\n    \"userId\": \"{{testUserId}}\",\n    \"postId\": \"{{testPostId}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/comments/626fd92d62aabe96208d0cb3",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"comments",
+								"626fd92d62aabe96208d0cb3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all comments of a post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/comments/all/{{testPostId}}",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"comments",
+								"all",
+								"{{testPostId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete all comments of a post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/comments/all/{{testPostId}}",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"comments",
+								"all",
+								"{{testPostId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "testUserId",
+			"value": "6265abc4a6dc475cdb4ac591"
+		},
+		{
+			"key": "api",
+			"value": "http://localhost:8800/api"
+		},
+		{
+			"key": "testPostId",
+			"value": "626fd44e58fe6616cb1761e7"
+		},
+		{
+			"key": "testCommentId",
+			"value": "626fd98962aabe96208d0cb8"
+		}
+	]
+}
