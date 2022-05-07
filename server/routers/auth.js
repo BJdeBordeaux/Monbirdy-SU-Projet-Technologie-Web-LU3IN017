@@ -51,10 +51,6 @@ router.post("/register", async (req, res) => {
 // Login
 router.post("/login", async (req, res) => {
   try {
-
-    // console.log(req.session);
-    // return;
-    
     var user = await User.findOne({
       username: req.body.username
     });
@@ -75,10 +71,9 @@ router.post("/login", async (req, res) => {
         console.log(err);
       }else{
         req.session.user = user;
+        res.status(200).json(user);
       }
     });
-    
-    res.status(200).json(user);
   } catch (error) {
     console.log(error);
   }

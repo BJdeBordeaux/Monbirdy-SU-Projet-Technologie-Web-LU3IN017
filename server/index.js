@@ -96,6 +96,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
     }
 });
 
+exports.default = app;
 
 app.listen(8800, () => {
     console.log("Backend ready");
