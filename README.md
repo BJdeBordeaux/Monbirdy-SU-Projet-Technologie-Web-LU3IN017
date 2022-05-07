@@ -23,13 +23,20 @@
             ```
 1. Démarrage
     * Dans le répertoire de travail
-    1. Ouverture de server de mongoDB
         ```shell
-                mongod --dbpath ./server/mongo/mongo --logpath ./server/mongo/mongod.log --fork
+            # si vous suivez les instructions précédantes dans Préparation
+            cd ..
+            # sinon, par exemple je fais
+            cd ~/Bureau/etudes/projets/Monbirdy-SU-Projet-Technologie-Web-LU3IN017
+        ```
+    1. Ouverture de server de mongoDB
+        * il faut d'abord installer le server de [mongoDB](https://www.mongodb.com/docs/manual/installation/)
+        ```shell
+            mongod --dbpath ./server/mongo/mongo --logpath ./server/mongo/mongod.log --fork
         ```
     1. Ouverture de back-end
         ```shell
-                cd server && npm start
+            cd server && npm start
         ```
     1. Ouverture de front-end
         * ouvrez un autre terminal et fait
