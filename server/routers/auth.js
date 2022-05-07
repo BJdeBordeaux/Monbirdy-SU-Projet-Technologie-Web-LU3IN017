@@ -70,7 +70,14 @@ router.post("/login", async (req, res) => {
     !validPassword && res.status(400).json("Wrong password");
 
     // generate session
-    req.session.user = user;
+    req.session.regenerate((err) => {
+      if (err) {
+        console.log(err);
+      }else{
+        req.session.user = user;
+      }
+    });
+    
     res.status(200).json(user);
   } catch (error) {
     console.log(error);
