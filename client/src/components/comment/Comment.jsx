@@ -48,7 +48,6 @@ export default function Comment({ comment }) {
           <Link to={`/profile/${user.username}`}>
             <img src={user.profilePhoto ? PF + user.profilePhoto : PF + "person/defaultAvatar.jpg"} alt="" 
             className="commentProfileImg me-2"
-              crossOrigin="anonymous"
             />
           </Link>
           <span className="commentUsername me-2">{user.username}</span><small className="timeSpan">{format(comment.createdAt)}</small>

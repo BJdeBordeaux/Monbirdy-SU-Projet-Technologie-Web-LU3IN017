@@ -183,7 +183,6 @@ export default function UserInfo({ data }) {
                     className="profileCoverImg"
                     src={data.coverPhoto ? PF + data.coverPhoto : `${PF}post/defaultBackground.jpeg`}
                     alt=""
-                    crossOrigin="anonymous"
                 />
                 <div className="coverOperation">
 
@@ -205,7 +204,6 @@ export default function UserInfo({ data }) {
                     className="profileUserImg"
                     src={data.profilePhoto ? PF + data.profilePhoto : `${PF}person/defaultAvatar.jpg`}
                     alt=""
-                    crossOrigin="anonymous"
                 />
                 <div className="profileUserOperation">
                     {currentUser.username === data.username ?

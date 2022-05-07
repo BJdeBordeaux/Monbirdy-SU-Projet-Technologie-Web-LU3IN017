@@ -63,7 +63,6 @@ export default function Message({ post }) {
 
         <Link to={`/profile/${user.username}`}>
           <img src={user.profilePhoto ? PF + user.profilePhoto : PF + "person/defaultAvatar.jpg"} alt="" className="messageProfileImg"
-            crossOrigin="anonymous"
           />
 
         </Link>
@@ -80,7 +79,6 @@ export default function Message({ post }) {
           <img className="messageImg"
             alt="Card"
             src={PF + post.photo}
-            crossOrigin="anonymous"
           />}
         <hr />
         <div className="messageFooter d-flex">

@@ -18,6 +18,17 @@ const authRouter = require("./routers/auth");
 
 dotenv.config();
 
+// Header pour toutes les réponses
+app.use( (req, res, next ) => {
+    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.header('Access-Control-Allow-Methods', 'POST, PUT, GET, OPTIONS, DELETE')
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+    res.header('Cross-Origin-Resource-Policy', 'cross-origin');
+    next()
+})
+
+
 // const dbAdress = process.env.MONGO_URL; 
 const dbAdress = process.env.LOCAL_DB;
 const connection = mongoose.connect(

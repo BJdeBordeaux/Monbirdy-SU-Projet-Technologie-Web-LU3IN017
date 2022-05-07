@@ -7,7 +7,7 @@ export default function Friend({ friend }) {
     return (
         <ListGroupItem >
             <Link to={`/profile/${friend.username}`} className="friend cursor-pointer align-items-center d-inline-flex" style={{ textDecoration: "none" }} >
-                <img src={friend.profilePhoto ? PF + friend.profilePhoto : PF + "person/defaultAvatar.jpg"} alt="" className="profileImg" crossOrigin="anonymous"
+                <img src={friend.profilePhoto ? PF + friend.profilePhoto : PF + "person/defaultAvatar.jpg"} alt="" className="profileImg"
                 />
                 <span className="usernameSpan" style={{ textDecorationColor: "black", color: "black" }}>{friend.username}</span>
             </Link>

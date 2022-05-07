@@ -85,7 +85,7 @@ export default function NavbarSearch() {
                         >
                             <NavItem className="cursor-pointer">
                                 <NavLink>
-                                    <img src={user.profilePhoto ? PF + user.profilePhoto : `${PF}person/defaultAvatar.jpg`} alt="" className="navbarImg" crossOrigin="anonymous" />
+                                    <img src={user.profilePhoto ? PF + user.profilePhoto : `${PF}person/defaultAvatar.jpg`} alt="" className="navbarImg"/>
                                 </NavLink>
                             </NavItem>
                             <UncontrolledDropdown
