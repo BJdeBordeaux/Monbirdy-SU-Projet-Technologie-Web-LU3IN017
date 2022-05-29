@@ -13,6 +13,7 @@
             * Pour le voir, entrez et cliquez sur `index.html`
         * `monbirdytest.postman_collection.json` : le fichier exporté pour le test postman
         * `README.md` : fichier de présentation.
+    * voir [notre vidéo sur Youtube](https://youtu.be/5xX-CEzZexk)
 1. Préparation
     1. Avec terminal, accédez dans le répertoire du projet
     1. Installation des modules
